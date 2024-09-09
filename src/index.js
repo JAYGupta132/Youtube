@@ -9,6 +9,10 @@ dotenv.config({
 })
 
 connectDB()
+.then()
+.catch((err) => {
+    console.log("MONGODB connection failed")
+})
 
 /*
 import express from "express";
