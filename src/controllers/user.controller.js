@@ -6,5 +6,11 @@ const registerUser = asyncHandler( async (req, res) => {
     })
 })
 
+const login = asyncHandler( async (req, res) => {
+    res.status(200).json({
+        message: "Getting Routes"
+    })
+})
 
-export {registerUser}
+
+export {registerUser, login}
